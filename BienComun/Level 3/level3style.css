@@ -1,0 +1,109 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+h1{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 35px;
+   text-align: center;
+   text-align: center;
+   background-image: linear-gradient(to right, #999966, #a3a3c2);
+   border-bottom: 4px solid #666699;
+}
+
+h2{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	text-align: center;
+}
+
+.container{
+	display: flex;
+    flex-direction: row;
+	height: 961px;
+	background-color: red;
+	border-top: 4px solid #666699;
+	border-bottom: 4px solid #666699;
+	width: 100%;
+}
+
+.social{
+	background: url(images/Paisaje.jpg);
+	background-repeat: no-repeat;
+    background-size: 100% 962px;
+}
+
+.derecha{
+	background: url(images/Paisaje.jpg);
+	background-repeat: no-repeat;
+    background-size: 100% 961px;
+}
+
+.orange{
+	background-color: orange;
+	border: 2px solid orange !important;
+}
+
+.botones1, .botones2, .botones3, .botones4{
+	text-align: center;
+}
+
+button{
+	font-size: 17px;
+	margin: 2px;
+	padding: 6px;
+	background-color: #a3a3c2;
+}
+
+.right{
+	background-color: #85e085;
+	border: 2px solid green !important;
+	transition: width 2s;
+}
+
+.wrong{
+	background-color: #862d2d;
+	border: 2px solid white !important;
+}
+
+.click{
+	background-color: orange;
+}
+
+.load2{
+	margin-top: 80px;
+}
+
+.load2 > button{
+	margin-left: 385px;
+	border: 4px solid #4d4dff;
+}
+
+button > a{
+	text-decoration: none;
+}
+
+.social{
+   flex: 15%;
+   height: 961px;
+   background-color: yellow;
+}
+
+
+
+.contenido{
+	flex: 70%;
+	height: 961px;
+	background-color: white;
+	border-left: 4px solid #666699;
+	border-right: 4px solid #666699;
+}
+
+.derecha{
+	flex: 15%;
+	height: 961px;
+	background-color: purple;
+}

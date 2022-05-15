@@ -1,0 +1,303 @@
+
+@font-face{
+	font-family: "TrebuchetMS";
+	src: url(fonts/TrebuchetMS.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "BebasNeue";
+	src: url("fonts/BebasNeue.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "WebSymbolsRegular";
+	src: url("fonts/websymbols-regular-webfont.eot");
+	src: url("fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"),
+	     url("fonts/websymbols-regular-webfont.woff") format('woff'),
+	     url("fonts/websymbols-regular-webfont.ttf") format("truetype"),
+	     url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg");
+	     font-weight: normal;
+	     font-style: normal;
+}
+
+body{
+	margin: 0px;   /*TENGO PENDIENTE METER AQUI LA PRACTICA QUE DESCUBRI EN GRID*/
+	padding: 0px;
+	min-height: 100vh;
+}
+
+
+
+
+
+/*////////////////////////CONTAINER///////////////////////////////*/
+.left{grid-area: left;}
+.content{grid-area: content;}
+.right{grid-area: right;}
+
+.container{
+	display: grid;
+	grid-template-areas: 'left content content content right';
+	background: url(images/decierto2.jpg);
+	background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+
+
+/*/////////////LEFT///////////////////////////*/
+.left{
+	min-height: 100vh;
+	margin-top: 0px;
+	background-color: red;
+	opacity: 0.7;
+	background: url(images/izquierda.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+	border-right: 6px solid green;
+	border-left: 6px solid blue;
+	border-top: 6px solid blue;
+	border-bottom: 6px solid blue;
+}
+
+
+.tuercaIzquierda > img{
+	padding-top: 0px;
+	padding-left: 0px;
+}
+
+.tuercaIzquierda > img{
+	margin: 70px 25px 25px 70px;
+	animation-name: rotate-gear;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+
+
+.symbols{
+	font-size: 60px;
+	font-family: "WebSymbolsRegular";
+	transition: all 300ms;
+}
+
+.symbols:hover{
+   font-size: 63px;
+}
+
+.symbols > p{
+	padding-left: 100px;
+	background-color: red;
+}
+
+
+
+
+
+/*////////////////////CENTER/////////////////////////*/
+.content{
+	min-height: 100vh;
+	background-color: #ffe6cc;
+	border-bottom: 6px solid #009900;
+}
+
+
+@media screen and (max-width: 1732px){
+       .container{
+       	  grid-template-areas: 'left left content content content right right';
+       }
+}
+
+@media screen and (max-width: 1470px){
+       .container{
+       	  grid-template-areas: 'left left content content right right';
+       }
+}
+
+@media screen and (max-width: 1290px){
+       .container{
+       	  grid-template-areas: 'left'
+       	  'content'
+       	  'right';
+       }
+}
+
+
+.title1{
+	text-align: center;
+	background-color: #ffd699;
+}
+
+.title1 > h2{
+	font-family: Oswald, sans-serif;
+	font-size: 35px;
+	background-color: white;
+	margin: 0 auto;
+	padding: 7px;
+	width: 40%;
+	border-left: 6px solid #86592d;
+	border-right: 6px solid #86592d;
+}
+
+.instructions{
+	text-align: center;
+}
+
+.instructions > h3{
+	width: 30%;
+	font-family: Oswald, sans-serif;
+	font-size: 25px;
+	background-color: #ffd6cc;
+	margin: 0 auto;
+	margin-top: 25px;
+	margin-bottom: 20px;
+	text-align: center;
+	padding: 5px;
+	color: blue;
+	border-top: 3px solid #86592d;
+}
+
+@media screen and (max-width: 1128px){
+    .instructions > h3{
+    	font-size: 20px;
+    	width: 50%;
+    }
+}
+
+button{
+	color: #002080;
+	margin: 2px;
+	padding: 6px 6px 6px 6px;
+	font-family: "Trirong", serif;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #1aff66;
+	border: 2px solid orange;
+	transition: all 200ms;
+}
+
+
+button:hover{
+	transform: scale(1.1, 1.1);
+}
+
+.orange1{
+	background-color: orange;
+}
+
+.review{
+	text-align: center;
+}
+
+
+.review > button{
+	border-radius: 10px;
+	color: #333300;
+	border: 2px solid green;
+	font-weight: bold;
+}
+.review1{
+	text-align: center;
+}
+
+.review1 > button{
+	border-radius: 10px;
+	color: #333300;
+	border: 2px solid green;
+	font-weight: bold;
+}
+
+.review2{
+	text-align: center;
+}
+
+.review2 > button{
+	border-radius: 10px;
+	color: #333300;
+	border: 2px solid green;
+	font-weight: bold;
+}
+
+.review3{
+	text-align: center;
+}
+
+.review3 > button{
+	border-radius: 10px;
+	color: #333300;
+	border: 2px solid green;
+	font-weight: bold;
+}
+
+
+.botones1{
+	font-size: 20px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.error{
+	background-color: #800000;
+	border: none;
+	color: black;
+}
+
+
+
+
+
+
+/*////////////////////RIGHT/////////////////////////*/
+
+
+
+.continue{
+	margin-top: 50px;
+	text-align: center;
+}
+
+.continue > button{
+	padding: 10px 20px 10px 20px;
+	border: 3px solid blue;
+	border-radius: 0px  25px 25px 0px;
+}
+
+.continue > button{
+	margin: 10px 140px 10px 140px;
+}
+
+button > a{
+	text-decoration: none;
+}
+
+.rights{
+	background-color: #00e600;
+	border: 2px solid green;
+}
+
+.right{
+	min-height: 100vh;
+    opacity: 0.7;
+    background: url(images/derecha.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+	border-left: 6px solid green;
+	border-right: 6px solid blue;
+	border-top: 6px solid blue;
+	border-bottom: 6px solid blue;
+}
+
+
+@keyframes rotate-gear{
+	from{
+		transform: rotateZ(360deg);
+	}
+}
+
+
